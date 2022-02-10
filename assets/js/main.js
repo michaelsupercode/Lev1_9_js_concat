@@ -1,0 +1,23 @@
+//Lev1_9_concat//
+var txt1 = `Sam is going to codingschool`;
+var txt2 = `Susi`;
+//const text3 = `programming bike`;
+var txt4 = `and`;
+let one = txt1.replace("codingschool", "school");
+let mov = "to the movie theater";
+let sent1 = `${one} ${txt4} ${mov}`;
+document.write(sent1 + "<br>");
+let sec2 = sent1.slice(0, 15);
+let sec3 = sent1.slice(33, 50);
+let sent2 = `${sec2}${sec3}`;
+document.write(sent2 + "<br>");
+let sec4 = "Susi and Sam are";
+let sec5 = sent1.slice(7, 22);
+let sent3 = `${sec4} ${sec5}`;
+document.write(sent3 + "<br>");
+let sec6 = "going to gym and";
+let sent4 = `${sec4} ${sec6} ${mov}`;
+document.write(sent4 + "<br>");
+let sent5 = sent1.replace("Sam", "Susi");
+document.write(sent5);
+console.log(sent5);
